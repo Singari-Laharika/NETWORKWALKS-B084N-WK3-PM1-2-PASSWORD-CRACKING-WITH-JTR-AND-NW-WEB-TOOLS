@@ -1,4 +1,5 @@
-::: {align="center"}
+<div align="center">
+
 # PASSWORD AUDITING & RECOVERY REPORT
 
 ## WEEK 3 \| PROJECT MODULE
@@ -7,76 +8,63 @@
 
 ### USING JOHN THE RIPPER & NETWORKWALKS WEB-BASED TOOLS
 
-```{=html}
 <p>
-```
-`<img src="https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000" />`{=html}
-`<img src="https://img.shields.io/badge/Platform-Kali%20Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white" />`{=html}
-`<img src="https://img.shields.io/badge/Focus-PDF%20Password%20Auditing-404040?style=flat-square&labelColor=C00000" />`{=html}
-`<img src="https://img.shields.io/badge/Week-03-238F89?style=flat-square&labelColor=000000" />`{=html}
-`<img src="https://img.shields.io/badge/NetworkWalks-Cybersecurity%20Project-404040?style=flat-square&labelColor=C00000" />`{=html}
-`<img src="https://img.shields.io/badge/GitHub-Project-181717?style=flat-square&logo=github&logoColor=white" />`{=html}
-```{=html}
+
+<img src="https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000" />
+<img src="https://img.shields.io/badge/Platform-Kali%20Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white" />
+<img src="https://img.shields.io/badge/Focus-PDF%20Password%20Auditing-404040?style=flat-square&labelColor=C00000" />
+<img src="https://img.shields.io/badge/Week-03-238F89?style=flat-square&labelColor=000000" />
+<img src="https://img.shields.io/badge/NetworkWalks-Cybersecurity%20Project-404040?style=flat-square&labelColor=C00000" />
+<img src="https://img.shields.io/badge/GitHub-Project-181717?style=flat-square&logo=github&logoColor=white" />
+
 </p>
-```
+
 **A practical report on extracting PDF password hashes and recovering
 passwords with dictionary-based tools.**
-:::
+
+</div>
 
 ------------------------------------------------------------------------
 
 ## 📌 Project Overview
 
-  -----------------------------------------------------------------------
-  Field                               Details
-  ----------------------------------- -----------------------------------
-  **Project**                         Week 3 -- Password Cracking
-
-  **Project Title**                   PDF Password Cracking Using John
-                                      the Ripper & NetworkWalks Web Tools
-
-  **Author**                          Singari Laharika
-
-  **Program**                         NetworkWalks Cybersecurity Project
-
-  **Target**                          Three password-protected training
-                                      PDF files
-
-  **Operating System**                Kali Linux
-
-  **Web Environment**                 Browser
-
-  **Focus**                           PDF hash extraction and password
-                                      recovery
-  -----------------------------------------------------------------------
+| Field                | Details                                                              |
+|:---------------------|:---------------------------------------------------------------------|
+| **Project**          | Week 3 – Password Cracking                                           |
+| **Project Title**    | PDF Password Cracking Using John the Ripper & NetworkWalks Web Tools |
+| **Author**           | Singari Laharika                                                              |
+| **Program**          | NetworkWalks Cybersecurity Project                                   |
+| **Target**           | Three password-protected training PDF files                          |
+| **Operating System** | Kali Linux                                                           |
+| **Web Environment**  | Browser                                                              |
+| **Focus**            | PDF hash extraction and password recovery                            |
 
 This project demonstrates how password-protected PDF files can be
 audited using dictionary-based password recovery techniques. I worked
 with John the Ripper through its Johnny graphical interface and
-NetworkWalks' online Hash Calculator and Password Cracker.
+NetworkWalks’ online Hash Calculator and Password Cracker.
 
 The practical work covers two modules:
 
--   **Module 1 -- John the Ripper (Johnny GUI):** Loading an extracted
-    PDF hash into Johnny and checking password candidates using a
-    wordlist.
--   **Module 2 -- NetworkWalks Web Tools:** Extracting a PDF hash in the
-    browser and submitting it to the online Password Cracker.
+- **Module 1 – John the Ripper (Johnny GUI):** Loading an extracted PDF
+  hash into Johnny and checking password candidates using a wordlist.
+- **Module 2 – NetworkWalks Web Tools:** Extracting a PDF hash in the
+  browser and submitting it to the online Password Cracker.
 
 ## 🎯 Objectives
 
--   Understand the basics of PDF password protection.
--   Learn how password hashes are extracted from protected PDF files.
--   Understand dictionary attacks and wordlists.
--   Explore John the Ripper and its Johnny GUI.
--   Use NetworkWalks' online Hash Calculator and Password Cracker.
--   Observe cracking progress and identify successful password matches.
--   Verify recovered passwords by opening the corresponding PDFs.
--   Understand why strong and unique passwords are important.
+- Understand the basics of PDF password protection.
+- Learn how password hashes are extracted from protected PDF files.
+- Understand dictionary attacks and wordlists.
+- Explore John the Ripper and its Johnny GUI.
+- Use NetworkWalks’ online Hash Calculator and Password Cracker.
+- Observe cracking progress and identify successful password matches.
+- Verify recovered passwords by opening the corresponding PDFs.
+- Understand why strong and unique passwords are important.
 
 ------------------------------------------------------------------------
 
-# 🧩 MODULE 1 -- PDF Password Auditing Using John the Ripper
+# 🧩 MODULE 1 – PDF Password Auditing Using John the Ripper
 
 ## 1. Introduction
 
@@ -87,14 +75,14 @@ view the recovery result.
 
 ## 2. Tools Used
 
-  Tool                     Purpose
-  ------------------------ -----------------------------------------------------
-  **Kali Linux**           Testing environment
-  **John the Ripper**      Password auditing tool
-  **Johnny GUI**           Graphical interface for John the Ripper
-  **PDF Hash Extractor**   Extracts a hash from a protected PDF
-  **Wordlist**             Provides candidate passwords
-  **PDF Viewer**           Checks whether the recovered password opens the PDF
+| Tool                   | Purpose                                             |
+|:-----------------------|:----------------------------------------------------|
+| **Kali Linux**         | Testing environment                                 |
+| **John the Ripper**    | Password auditing tool                              |
+| **Johnny GUI**         | Graphical interface for John the Ripper             |
+| **PDF Hash Extractor** | Extracts a hash from a protected PDF                |
+| **Wordlist**           | Provides candidate passwords                        |
+| **PDF Viewer**         | Checks whether the recovered password opens the PDF |
 
 ## 3. Methodology
 
@@ -114,48 +102,52 @@ view the recovery result.
 
 The Johnny screenshot shows a successful password match:
 
-  Parameter                      Result
-  ------------------------------ -------------------------
-  **Tool**                       Johnny GUI
-  **Recovered password shown**   `password1`
-  **Status**                     ✅ Password match found
+| Parameter                    | Result                  |
+|:-----------------------------|:------------------------|
+| **Tool**                     | Johnny GUI              |
+| **Recovered password shown** | `password1`             |
+| **Status**                   | ✅ Password match found |
 
 **Evidence:**
 
-![Extracted PDF hash saved in Mousepad](passhash-mousepad.png)
+<figure>
+<img src="passhash-mousepad.png"
+alt="Extracted PDF hash saved in Mousepad" />
+<figcaption aria-hidden="true">Extracted PDF hash saved in
+Mousepad</figcaption>
+</figure>
 
-![Johnny GUI showing the recovered password](johnny-cracked.png)
+<figure>
+<img src="johnny-cracked.png"
+alt="Johnny GUI showing the recovered password" />
+<figcaption aria-hidden="true">Johnny GUI showing the recovered
+password</figcaption>
+</figure>
 
 ------------------------------------------------------------------------
 
-# 🌐 MODULE 2 -- NetworkWalks Web-Based Password Cracking Tools
+# 🌐 MODULE 2 – NetworkWalks Web-Based Password Cracking Tools
 
 ## 1. Introduction
 
-In this module, I used NetworkWalks' browser-based tools to extract PDF
+In this module, I used NetworkWalks’ browser-based tools to extract PDF
 password hashes and check them against a built-in wordlist.
 
 The module uses two tools:
 
-1.  **NetworkWalks Hash Calculator** -- extracts a crackable hash from a
+1.  **NetworkWalks Hash Calculator** – extracts a crackable hash from a
     password-protected PDF.
-2.  **NetworkWalks Password Cracker** -- checks candidate passwords
+2.  **NetworkWalks Password Cracker** – checks candidate passwords
     against the extracted hash.
 
 ## 2. Tools Used
 
-  -----------------------------------------------------------------------
-  Tool                                Purpose
-  ----------------------------------- -----------------------------------
-  **NetworkWalks Hash Calculator**    Extracts the PDF hash
-
-  **NetworkWalks Password Cracker**   Performs the dictionary-based
-                                      password check
-
-  **Web Browser**                     Opens the online tools
-
-  **PDF Viewer**                      Verifies the recovered password
-  -----------------------------------------------------------------------
+| Tool                              | Purpose                                      |
+|:----------------------------------|:---------------------------------------------|
+| **NetworkWalks Hash Calculator**  | Extracts the PDF hash                        |
+| **NetworkWalks Password Cracker** | Performs the dictionary-based password check |
+| **Web Browser**                   | Opens the online tools                       |
+| **PDF Viewer**                    | Verifies the recovered password              |
 
 **Tools used:** - [NetworkWalks Hash
 Calculator](https://networkwalks.com/hash-calculator/) - [NetworkWalks
@@ -178,131 +170,129 @@ Password Cracker](https://networkwalks.com/password-cracker/)
 8.  **Verify the PDF:** Used the recovered password to open the
     corresponding PDF.
 
-## 4. Results -- PDF Password Recovery
+## 4. Results – PDF Password Recovery
 
 All three PDFs shown in the web-tool screenshots produced successful
 password matches.
 
-### PDF 1 -- My Locked PDF1.pdf
+### PDF 1 – My Locked PDF1.pdf
 
-  Parameter                Result
-  ------------------------ ----------------------------------------
-  **Hash extraction**      ✅ Successful
-  **Recovered password**   `good-luck`
-  **Password check**       ✅ Successful
-  **Captured flag**        `nw{cybersecurity_flag_captured_2608}`
+| Parameter              | Result                                 |
+|:-----------------------|:---------------------------------------|
+| **Hash extraction**    | ✅ Successful                          |
+| **Recovered password** | `good-luck`                            |
+| **Password check**     | ✅ Successful                          |
+| **Captured flag**      | `nw{cybersecurity_flag_captured_2608}` |
 
-![Hash extracted using NetworkWalks Hash
-Calculator](hash-calculator.png)
+<figure>
+<img src="hash-calculator.png"
+alt="Hash extracted using NetworkWalks Hash Calculator" />
+<figcaption aria-hidden="true">Hash extracted using NetworkWalks Hash
+Calculator</figcaption>
+</figure>
 
-![NetworkWalks Password Cracker showing the PDF 1
-match](cracker-pdf1.png)
+<figure>
+<img src="cracker-pdf1.png"
+alt="NetworkWalks Password Cracker showing the PDF 1 match" />
+<figcaption aria-hidden="true">NetworkWalks Password Cracker showing the
+PDF 1 match</figcaption>
+</figure>
 
-![PDF 1 flag](pdf1-flag.png)
+<figure>
+<img src="pdf1-flag.png" alt="PDF 1 flag" />
+<figcaption aria-hidden="true">PDF 1 flag</figcaption>
+</figure>
 
-### PDF 2 -- My Locked PDF2.pdf
+### PDF 2 – My Locked PDF2.pdf
 
-  Parameter                Result
-  ------------------------ -------------------------------------------
-  **Recovered password**   `password1`
-  **Password check**       ✅ Successful
-  **Captured flag**        `nw{networkwalks_persistence_jtr_270521}`
+| Parameter              | Result                                    |
+|:-----------------------|:------------------------------------------|
+| **Recovered password** | `password1`                               |
+| **Password check**     | ✅ Successful                             |
+| **Captured flag**      | `nw{networkwalks_persistence_jtr_270521}` |
 
-![NetworkWalks Password Cracker showing the PDF 2
-match](cracker-pdf2.png)
+<figure>
+<img src="cracker-pdf2.png"
+alt="NetworkWalks Password Cracker showing the PDF 2 match" />
+<figcaption aria-hidden="true">NetworkWalks Password Cracker showing the
+PDF 2 match</figcaption>
+</figure>
 
-![PDF 2 flag](pdf2-flag.png)
+<figure>
+<img src="pdf2-flag.png" alt="PDF 2 flag" />
+<figcaption aria-hidden="true">PDF 2 flag</figcaption>
+</figure>
 
-### PDF 3 -- My Locked PDF3.pdf
+### PDF 3 – My Locked PDF3.pdf
 
-  Parameter                Result
-  ------------------------ ----------------------------------
-  **Recovered password**   `1qaz2wsx`
-  **Password check**       ✅ Successful
-  **Captured flag**        `nw{networkwalks_flag_260821_1}`
+| Parameter              | Result                           |
+|:-----------------------|:---------------------------------|
+| **Recovered password** | `1qaz2wsx`                       |
+| **Password check**     | ✅ Successful                    |
+| **Captured flag**      | `nw{networkwalks_flag_260821_1}` |
 
-![NetworkWalks Password Cracker showing the PDF 3
-match](cracker-pdf3.png)
+<figure>
+<img src="cracker-pdf3.png"
+alt="NetworkWalks Password Cracker showing the PDF 3 match" />
+<figcaption aria-hidden="true">NetworkWalks Password Cracker showing the
+PDF 3 match</figcaption>
+</figure>
 
-![PDF 3 flag](pdf3-flag.png)
+<figure>
+<img src="pdf3-flag.png" alt="PDF 3 flag" />
+<figcaption aria-hidden="true">PDF 3 flag</figcaption>
+</figure>
 
 ------------------------------------------------------------------------
 
 # 🏆 Overall Results
 
-  PDF Document         Recovered Password   Result
-  -------------------- -------------------- ---------------
-  My Locked PDF1.pdf   `good-luck`          ✅ Successful
-  My Locked PDF2.pdf   `password1`          ✅ Successful
-  My Locked PDF3.pdf   `1qaz2wsx`           ✅ Successful
+| PDF Document       | Recovered Password | Result        |
+|:-------------------|:-------------------|:--------------|
+| My Locked PDF1.pdf | `good-luck`        | ✅ Successful |
+| My Locked PDF2.pdf | `password1`        | ✅ Successful |
+| My Locked PDF3.pdf | `1qaz2wsx`         | ✅ Successful |
 
 ## ⚖️ Comparison of Both Modules
 
-  -----------------------------------------------------------------------
-  Feature                 Module 1 -- John the    Module 2 --
-                          Ripper                  NetworkWalks Web Tools
-  ----------------------- ----------------------- -----------------------
-  **Environment**         Kali Linux              Web browser
-
-  **Hash extraction**     PDF hash extractor      NetworkWalks Hash
-                                                  Calculator
-
-  **Password auditing**   John the Ripper         NetworkWalks Password
-                                                  Cracker
-
-  **Interface**           Johnny GUI              Web interface
-
-  **Candidate source**    Wordlist                Built-in wordlist
-
-  **Result evidence**     Johnny screenshot       Password Cracker
-                                                  screenshots
-  -----------------------------------------------------------------------
+| Feature               | Module 1 – John the Ripper | Module 2 – NetworkWalks Web Tools |
+|:----------------------|:---------------------------|:----------------------------------|
+| **Environment**       | Kali Linux                 | Web browser                       |
+| **Hash extraction**   | PDF hash extractor         | NetworkWalks Hash Calculator      |
+| **Password auditing** | John the Ripper            | NetworkWalks Password Cracker     |
+| **Interface**         | Johnny GUI                 | Web interface                     |
+| **Candidate source**  | Wordlist                   | Built-in wordlist                 |
+| **Result evidence**   | Johnny screenshot          | Password Cracker screenshots      |
 
 ## 📚 Key Concepts Learned
 
-  -----------------------------------------------------------------------
-  Concept                             What I Learned
-  ----------------------------------- -----------------------------------
-  **PDF Hash**                        A representation of PDF
-                                      password-protection data used by
-                                      auditing tools
-
-  **Hash Extraction**                 Obtaining a hash from a
-                                      password-protected PDF
-
-  **Dictionary Attack**               Checking password candidates from a
-                                      wordlist
-
-  **Wordlist**                        A collection of candidate passwords
-
-  **John the Ripper**                 A tool used for password auditing
-
-  **Johnny GUI**                      A graphical interface for John the
-                                      Ripper
-
-  **Hash Matching**                   Finding a candidate that matches
-                                      the extracted hash
-
-  **PDF Protection**                  Understanding password protection
-                                      and the need for strong passwords
-  -----------------------------------------------------------------------
+| Concept               | What I Learned                                                          |
+|:----------------------|:------------------------------------------------------------------------|
+| **PDF Hash**          | A representation of PDF password-protection data used by auditing tools |
+| **Hash Extraction**   | Obtaining a hash from a password-protected PDF                          |
+| **Dictionary Attack** | Checking password candidates from a wordlist                            |
+| **Wordlist**          | A collection of candidate passwords                                     |
+| **John the Ripper**   | A tool used for password auditing                                       |
+| **Johnny GUI**        | A graphical interface for John the Ripper                               |
+| **Hash Matching**     | Finding a candidate that matches the extracted hash                     |
+| **PDF Protection**    | Understanding password protection and the need for strong passwords     |
 
 ## 🔐 Security Recommendations
 
--   Use long, unique passwords for protected documents.
--   Avoid common passwords and predictable patterns.
--   Do not reuse passwords across documents or accounts.
--   Use a password manager to create and store strong passwords.
--   Choose strong encryption settings when protecting PDF files.
--   Keep sensitive documents and passwords secure.
--   Only perform password auditing with permission.
+- Use long, unique passwords for protected documents.
+- Avoid common passwords and predictable patterns.
+- Do not reuse passwords across documents or accounts.
+- Use a password manager to create and store strong passwords.
+- Choose strong encryption settings when protecting PDF files.
+- Keep sensitive documents and passwords secure.
+- Only perform password auditing with permission.
 
 ------------------------------------------------------------------------
 
 # 🏁 Conclusion
 
 I completed the Week 3 PDF password-cracking exercise using John the
-Ripper with Johnny GUI and NetworkWalks' browser-based tools. I learned
+Ripper with Johnny GUI and NetworkWalks’ browser-based tools. I learned
 how to extract PDF hashes, understand dictionary-based password
 checking, and review successful password matches.
 
@@ -322,14 +312,14 @@ systems that you own or have explicit permission to test.
 
 ## 🛠️ Technologies & Tools
 
--   Kali Linux
--   John the Ripper
--   Johnny GUI
--   NetworkWalks Hash Calculator
--   NetworkWalks Password Cracker
--   PDF Hash Extraction
--   Dictionary-Based Password Auditing
--   Wordlists
+- Kali Linux
+- John the Ripper
+- Johnny GUI
+- NetworkWalks Hash Calculator
+- NetworkWalks Password Cracker
+- PDF Hash Extraction
+- Dictionary-Based Password Auditing
+- Wordlists
 
 ------------------------------------------------------------------------
 
@@ -345,7 +335,7 @@ LinkedIn: [https://www.linkedin.com/in/singari-laharika/](https://www.linkedin.c
 
 ## 📌 Project Information
 
-**Program:** NetworkWalks Cybersecurity\
-**Week:** 03\
-**Project:** PDF Password Cracking\
+**Program:** NetworkWalks Cybersecurity  
+**Week:** 03  
+**Project:** PDF Password Cracking  
 **Repository:** GitHub
