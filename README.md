@@ -111,6 +111,13 @@ The Johnny screenshot shows a successful password match:
 **Evidence:**
 
 <figure>
+<img src="online-hash-calculator.png"
+alt="Extracted PDF hash using online hash crack tool" />
+<figcaption aria-hidden="true">Extracted PDF hash using online hash crack tool
+</figcaption>
+</figure>
+
+<figure>
 <img src="passhash-mousepad.png"
 alt="Extracted PDF hash saved in Mousepad" />
 <figcaption aria-hidden="true">Extracted PDF hash saved in
